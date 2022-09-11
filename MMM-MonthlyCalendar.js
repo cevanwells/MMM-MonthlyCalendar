@@ -185,7 +185,7 @@ Module.register("MMM-MonthlyCalendar", {
     table.appendChild(row);
 
     for (var week = 0; week < 6 && cellIndex <= monthDays; ++week) {
-      row = el("tr", { "className": "xsmall" });
+      row = el("tr", { "className": "small" });
       if (self.config.showWeekNumber) {
         const weekDate = new Date(now.getFullYear(), now.getMonth(), cellIndex);
         row.appendChild(el("td", { "className": "weeknum", "innerHTML": getWeekNumber(weekDate) }));
